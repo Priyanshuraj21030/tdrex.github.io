@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Offcanvas navbar</a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meditation.html">Meditation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Mindfulness.html">Mindfulness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stress.html">Stress
+
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="mentalhealth.html">Mental Health </a>
+                    </li>
+                </ul>
+                <a href="about.html"> <button type="button" class="btn btn-outline-success">About Us</button></a>
+
+                <div class="mx-2">
+               
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                        Login
+                    </button>
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                        SignUp
+                    </button>
+                </div>
+            </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginModalLabel">Login to Health Checkup</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" />
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SignUpModal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignUpModalLabel">
+                        Get an Health Checkup account
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" />
+                            <div id="emailHelp" class="form-text">
+                                We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1" />
+                        </div>
+                        <div class="mb-3 form-check"></div>
+                        <button type="submit" class="btn btn-primary">
+                            Create Account
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    </nav>
+    <html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.98.0">
+        <title>Stress</title>
+    
+        <link rel="canonical" href="Mindfulness.html">
+    
+    
+    
+        <style>
+          .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+          }
+    
+          @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+              font-size: 3.5rem;
+            }
+          }
+    
+          .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+          }
+    
+          .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+          }
+    
+          .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+          }
+    
+          .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+          }
+    
+          .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+          }
+        </style>
+    
+        
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="blog.css" rel="stylesheet">
+      </head>
+      <body>
+        
+    <div class="container">
+      <header class="blog-header lh-1 py-1">
+        
+        </div>
+      </header>
+    
+      <div class="nav-scroller py-1 mb-2">
+        
+      </div>
+    </div>
+    
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">What is mindfulness?
+        </h1>
+          <p class="lead my-3">Mindfulness is the ability to be present, to rest in the here and now, fully engaged with whatever we’re doing in the moment. It is basically the idea of learning how to be fully present and engaged in the moment, aware of your thoughts and feelings without distraction or judgment.
+            First, it’s helpful to become familiar with the meaning of mindfulness, as well as how it relates to meditation. Mindfulness is the quality of being present and fully engaged with whatever we’re doing at the moment — free from distraction or judgment, and aware of our thoughts and feelings without getting caught up in them. We train in this moment-to-moment awareness through meditation, allowing us to build the skill of mindfulness so that we can then apply it to everyday life. In teaching the mind to be present, we are teaching ourselves to live more mindfully — in the present, taking a breath, not beholden to reactive thoughts and feelings — which is particularly helpful when faced with challenging circumstances or difficult situations.
+            
+            
+               </p>
+          <p class="lead mb-0"><a href="#" class="text-white fw-bold"></a></p>
+        </div>
+      </div>
+    
+      <div class="container p-4">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >Mindful State Test
+
+                  </strong
+                >
+                <h3 class="mb-0"></h3>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">
+                    Wondering how many times a day you're in a mindful state......</p>
+                <a href="mind1.html" class="stretched-link"
+                  >Read</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="x.jpg"
+                  alt=""
+                  class="src"
+                  width="200"
+                  height="250"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: "
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                /><title>Practicing mindfulness meditation</title
+                ><rect width="100%" height="100%" fill="#55595c"></rect
+                ><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Practicing mindfulness meditation</strong>
+                <h3 class="mb-0"></h3>
+                <div class="mb-1 text-muted"></div>
+                <p class="mb-auto">Practicing mindfulness meditation can be a great way......</p>
+                <a href="mind2.html" class="stretched-link"
+                  >Read</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="prac,jpg.jpg"
+                  alt=""
+                  class="src"
+                  width="200"
+                  height="250"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: "
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                /><title>Placeholder</title
+                ><rect width="100%" height="100%" fill="#55595c"></rect
+                ><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Being in the moment</strong>
+                <h3 class="mb-0"></h3>
+                <div class="mb-1 text-muted"></div>
+                <p class="card-text mb-auto">
+                    The biggest gift we can each give ourselves is the gift of being........
+                </p>
+                <a
+                  href="mind3.html"
+                  class="stretched-link"
+                  >Read</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="re.jpg"
+                  alt=""
+                  class="src"
+                  width="200"
+                  height="250"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: "
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                /><title>Placeholder</title
+                ><rect width="100%" height="100%" fill="#55595c"></rect
+                ><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success"
+                  >Self: always a priority </strong
+                >
+                <h3 class="mb-0"></h3>
+                <div class="mb-1 text-muted"></div>
+                <p class="mb-auto">
+                    What is self-care really about? It’s simply...............
+                </p>
+                <a href="mind4.html" class="stretched-link"
+                  >Read</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="4.jpg"
+                  alt=""
+                  class="src"
+                  width="200"
+                  height="250"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Placeholder: "
+                  preserveAspectRatio="xMidYMid slice"
+                  focusable="false"
+                /><title>Placeholder</title
+                ><rect width="100%" height="100%" fill="#55595c"></rect
+                ><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          
+</body>
+
+</html>

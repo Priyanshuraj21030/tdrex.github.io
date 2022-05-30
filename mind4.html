@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <title>Meditation</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Health Checkup</a>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="meditation.html">Meditation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Mindfulness.html">Mindfulness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stress.html">Stress
+
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="mentalhealth.html">Mental Health </a>
+              </li>
+            </ul>
+            <div class="mx-2">
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+                    Login
+                </button>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">
+                    SignUp
+                </button>
+            </div>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="LoginModalLabel">Login to Health Checkup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SignUpModal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="SignUpModalLabel">
+                    Get an Health Checkup account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">
+                            We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="cexampleInputPassword1" />
+                    </div>
+                    <div class="mb-3 form-check"></div>
+                    <button type="submit" class="btn btn-primary">
+                        Create Account
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+</nav>
+   
+        <div class="container">
+            <div class="p-4 p-md-5 mb-1 text-white rounded "></div>
+            <div class="container marketing">
+    
+    
+                <!-- START THE FEATURETTES -->
+    
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Self: always a priority
+                            <span class="text-muted"></span></h2>
+                        <p class="lead">What is self-care really about? It’s simply the time we take to look after our mind and body. Self-care is also deeply personal. It’s specific to what each of us needs and what fits into our routines: a morning walk in the fresh air, a warm bath after a long day, a deep breath before a meeting. There’s no right or wrong way to do self-care.
+
+                            But how do we practice self-care regularly when life gets in the way? Maybe we’re too busy, too exhausted, too focused on others to quite literally give ourselves a break. As it turns out, when there’s more going on in our life, that’s when we need our self-care practices the most.
+                            
+                            It’s not just during tough times that self-care can benefit us, either. An established practice can help us enjoy the good times to their fullest potential or help us relieve stress. So let’s take a look at how to create a self-care plan that actually sticks. We’ll use mindfulness to help us identify what we can do to feel our best, no matter what life throws our way.
+                            Key points:When there’s more going on in our life, that’s when we need our self-care practices the most
+                            Self-care isn’t selfish: when we take good care of ourselves, we can care better for others, too
+                            Try 7 meditations for practicing self-care
+                            
+                             </div>
+                    <div class="col-md-5">
+                        <img src="4.jpg" alt="" class="src" width="500" height="480"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Pl</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text></svg>
+    
+    
+                    </div>
+                </div>
+    
+                
+    
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">What is self-love?
+
+                        <p class="lead">Self-love, like the very idea of love itself, is a tricky thing to pin down. But we can think of it as the act of connecting with ourselves to better tune in to our truths which, in turn, shapes how we show up in life. We practice self-love by being kinder and gentler to ourselves, without indulging the inner-critic and without judgment.
+                            In other words, self-love involves shifting our focus inward not outward, setting healthy boundaries we might not be used to setting, no longer denying our innermost needs, and adopting a new perspective, removed from the stories in our head that are dependent on the actions or words of others, or the rigid expectations we hold on to in our mind.
+                            Self-love begins with the simple act of appreciating ourselves. Too often, our minds become overrun with critical mental chatter and limiting beliefs about what we are or aren’t capable of. When we’re consumed by these thoughts, it’s difficult to offer ourselves gentleness or recognize our strengths. To practice self-love is to find that same friendly compassion for ourselves.
+                            And that word “practice” is important. Self-love is more than just an absence of negative self-talk or a sustained state of positivity towards ourselves — that would be unrealistic and unsustainable. Self-love is learned and cultivated through daily intentional actions that support our development.
+                            
+                             </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="self.jpg" alt="" class="src" width="360" height="320"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Pl</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text></svg>
+    
+    
+                    </div>
+                </div>
+    
+
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Why is self-love so challenging?<span class="text-muted"></span></h2>
+                        <p class="lead">There are many reasons that it can be difficult to practice self-love. Some of those reasons stem from a misunderstanding of what it means to do so. The very notion is often conflated with narcissism or selfishness. Some of us might worry that if we express positive feelings about ourselves, we’ll appear self-absorbed or arrogant. But there’s a difference between these character traits and the experience of genuine confidence in, and gratitude for, who we are. It’s not about elevating ourselves above anyone else, but rather about appreciating our own uniqueness separate from others and their opinions.
+                            Unfortunately, this isn’t how we’re socialized. We live in an achievement-oriented world in which we’re taught to measure ourselves against external markers of success. And when we fall short of those touchpoints, we can fall into mental storylines around inadequacy or failure and become overly self-critical. When we lean into such negative self-talk, research shows that we remain stuck in a physical state of stress.
+                            So much of self-criticism stems from recognizing ways in which we’d like ourselves to change. Perhaps we want to feel healthier in our bodies, or become less attached to our anger. The truth is that the more we resist things as they are, the more likely they are to stay the same. Many of us have experienced frustration when we’ve faltered on a new exercise regimen, only to let that frustration cause us to give up entirely, or experienced the shame that comes after losing our temper when we promised we wouldn’t. When we follow our missteps with self-punishment and reproach, we ensure that we’ll stay stuck in that cycle of negativity.
+                            But when we shift perspective, we can reframe our errors and learn from our mistakes. Treating ourselves with kindness can have a powerful impact on our thinking. That's where meditation comes in.
+                            
+
+                        </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="image.jpg" alt="" class="src" width="450" height="500"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+                                
+    
+    
+                    </div>
+                </div>
+    
+
+
+
+
+
+    
+              
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">The benefit of self-care practices
+
+                            <span class="text-muted"></span></h2>
+                        <p class="lead">Many of us know what it feels like when we neglect our well-being. Our body or mind eventually forces us to stop. Maybe we’ve been skipping the daily stretches that help us get through a workout and we get injured. Or maybe we’ve been working overtime without the rest our body needs and we lash out at someone close to us. When we aren’t taking good care of ourselves, we don’t feel our best or interact with others at our best.
+                            Rather than view self-care as a nice-to-have or an indulgence, an internet trend or something only reserved for Sundays, we can look at this practice as part of our ongoing mental health self-care. As mental health experts note, we’re not paying attention to ourselves in a self-centered, narcissistic way, but in a way that makes sure we’re being cared for — for us and by us — by taking time to do things that help us live well and improve our health.
+                            The time we dedicate to self-care is just as important as everyone else’s time. When we make a point to nurture ourselves, we can care for others in a more meaningful and compassionate way, 
+                            
+                             </div>
+                    <div class="col-md-5">
+                        <img src="vis.jpg" alt="" class="src" width="300" height="350"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Pl</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text></svg>
+    
+    
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">3 self-care practices to try
+                            <span class="text-muted"></span></h2>
+                        <p class="lead">Remember the “self” in self-care. We each come to it with our own perspective, and it’s not a one-size-fits-all kind of practice. Still, we can try these self-care ideas if we’re looking for a place to start experimenting until we find what works for us.
+
+                             </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="self.jpg" alt="In a chair" class="src" width="400" height="300"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>In a chair</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+    
+    
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Meditation  <span class="text-muted"></span></h2>
+                        <p class="lead">Yes, it’s an obvious one, but it’s worth a reminder if it’s not already part of our self-care practice, or what we consider to be self-care. The benefits of meditation are well-known: reduced stress and anxiety, and increased focus and positive emotions. So when we sit in the present moment without judgment, we’re also taking time to care for our mind and in turn, ourselves.
+
+                    </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="mediiiiii.jpg" alt="" class="src" width="500" height="350"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Pl</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text></svg>
+    
+    
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Play<span class="text-muted"></span></h2>
+                        <p class="lead">Many of us lose a sense of fun and play as we grow older, but it can be freeing and even connect to improved physical health. Research also shows that laughing is linked to reduced stress, tension, and anxiety, suggesting that it’s a valid form of self-care all on its own.
+
+                             </p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="11.jpg" alt="In a chair" class="src" width="400" height="300"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>In a chair</title>
+                            <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                                dy=".3em"></text>
+    
+    
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+    
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading">Gratitude<span class="text-muted"></span></h2>
+                        <p class="lead">The simple act of writing one or two things we’re grateful for each day can help us avoid getting caught up in life’s frustrations, and recognize instead that we’re grateful for all that we do have. We might also find that when we take the time to make gratitude a part of our self-care routine, we can be grateful for that routine itself.
+
+                             </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="gra.jpg" alt="" class="src" width="500" height="350"
+                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Pl</title>
+                        <rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777"
+                            dy=".3em"></text></svg>
+    
+    
+                    </div>
+                </div>
+            
+
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>© 2022-2023 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
